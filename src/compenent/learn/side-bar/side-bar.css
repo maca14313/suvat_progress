@@ -1,0 +1,43 @@
+.side-bar-con{
+    min-width: 20%;
+    max-width: 20%;
+    min-height: 400px;
+    background-color:rgb(0,0,0);
+    border: 0.5px solid white;
+
+    
+
+}
+
+
+/*  @media screen side-bar-con  */
+@media screen and (max-width:1260px) {
+    .side-bar-con{
+        min-width: 14%;
+        max-width: 14%;
+    }
+    
+}
+
+@media screen and (max-width:1020px) {
+    .side-bar-con{
+        min-width: 12%;
+        max-width: 12%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .side-bar-con{
+        min-width: 10%;
+        max-width: 10%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .side-bar-con{
+        min-width: 0%;
+        max-width: 0%;
+        border: 0px solid white;
+
+    }
+}

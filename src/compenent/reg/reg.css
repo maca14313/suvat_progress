@@ -1,0 +1,341 @@
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.margin{
+    margin: 10px;
+}
+.margin5{
+    margin: 5px;
+}
+.regCon{
+    background-color:white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.formCon{
+    min-width:600px;
+    max-width:600px;
+    min-height:max-content;
+    background-color:transparent;
+    box-shadow: 1px 1px 10px lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+
+}
+
+.row{
+    margin: 12px 0;
+    min-width: 85%;
+    max-width: 85%;
+    height: 42px;
+   background-color: white;
+  outline: none;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1.5px solid #C7BEBE;
+  border: none;
+  border-bottom-width: 2.5px;
+  border-bottom: 1px solid #00c8ff;
+  border-radius: 6px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.regBtn{
+    color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  background-color: #97edff;
+  cursor: pointer;
+  color: black;
+}
+
+.regBtn:focus{
+    background-color: #8aa7f5;
+}
+
+.regBtn::placeholder{
+    color: white;
+}
+
+
+@media screen and (max-width:500px) {
+    .formCon{
+        min-width: 90vw;
+        min-height:max-content;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:750px) and (min-width:501px) {
+    .formCon{
+        min-width: 80vw;
+        min-height:max-content;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-height:800px) and (min-height:620px){
+    .row{
+        height: 40px;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-height:619px) and (min-height:550px){
+    .row{
+        height: 30px;
+        margin: 7px 0px;
+    }
+}
+
+@media screen and (max-height:549px){
+    .row{
+        height: 20px;
+        margin: 6px 0px;
+        font-size: 13px;
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+}
+
+@media screen and (max-height:440px){
+    .formCon{
+       min-height: 198px;
+       max-height: 100px;
+       overflow-y: scroll;
+    
+    }
+    .row{
+        min-height: 28px;
+        margin: 6px 0px;
+        font-size: 13px;
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+}
+
+
+
+
+
+/**************************************************************************/
+
+.listCon{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border: none;
+ border-bottom: 1px solid rgb(179, 174, 174);
+ margin: 2.5px;
+ max-width: 75vw;
+ min-height: 30px;
+ max-height: 30px;
+ box-shadow: 1px 1px 10px lightgray;
+ overflow-x: scroll;
+ border-bottom: 1px solid #00c8ff;
+
+}
+
+.idColor{
+    background-color:#97edff;
+}
+
+.titleOfProfile{
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+/**************************************************************************/
+.regConList{
+    overflow-y: scroll;
+    justify-content: flex-start;
+    padding: 20px 0px;
+}
+
+.listOfMembersCon{
+padding: 0px;
+box-shadow: 0px 0px 0px;
+
+}
+
+.numberInputCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 0px black;
+    padding: 0px;
+}
+
+.numberInput{
+    min-width: 65%;
+    max-width:65% ;
+
+}
+
+
+.membersLength{
+    min-width: 30px;
+    max-width:30px ;
+    max-height: 30px;
+    min-height: 30px;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+.spanOfList{
+    margin-right:10px ;
+}
+
+.searchByCon{
+    min-width: 90%;
+    max-width:90% ;
+    max-height: 30px;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.searchByConNumber{
+    min-width:max-content;
+    max-width:max-content ;
+}
+.searchByBtn{
+    background-color: #97edff;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 7px;
+    color: black;
+}
+.searchByBtn:active{
+    padding: 10px 20px;
+}
+
+@media screen and (max-height:440px){
+    .listOfMembersCon{
+       min-height:35px;
+       max-height: 35px;
+       overflow-y: scroll;
+       background-color: transparent;
+    
+    }
+    
+}
+         /**************************************************************************/
+
+.updatelabel{
+   max-width: 80%;
+   min-width:80% ;
+   margin: 5px;
+}
+         /**************************************************************************/         /**************************************************************************/
+
+
+.deleteMemberCon{
+    max-width: 80%;
+   min-width:80%;
+   min-height:25px;
+   max-height: 25px;
+   display: flex;
+   justify-content: flex-end;
+}
+.deleteMemberCon div{
+    padding: 5px 10px;
+    background-color: rgb(249, 86, 86);
+    color: white;
+    font-size: 13px;
+
+
+    
+}
+.deleteMemberCon div:active{
+    padding: 10px 15px ;
+    border-bottom: 1px solid black;
+}
+
+
+.regConDelete{
+    position: relative;
+}
+.regConDeleteModal{
+position: absolute;
+bottom: 45%;
+left: 45%;
+translate: -45%;
+max-width: 90%;
+min-width:90%;
+min-height:100px;
+max-height: 100px;
+background-color:#97edff;
+box-shadow: 1px 1px 10px grey;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 5px;
+}
+
+.regConDeleteModalBtnCon{
+margin-top: 15px;
+max-width: 100%;
+min-width:100%;
+min-height:40px;
+max-height: 40px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.regConDeleteModalTitle{
+margin-top: 5px;
+font-size: 18px;
+text-align: center;
+}
+.regConDeleteModalYes{
+color: red;
+background-color: aliceblue;
+padding: 7px 40px ;
+border-radius: 10px;
+box-shadow: 1px 1px 10px grey;
+
+
+}
+.regConDeleteModalNo{
+    color: green;
+    background-color: aliceblue;
+    padding: 7px 40px ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px grey;
+
+    }
+
+.regConDeleteModalYes:active{
+        padding: 10px 50px ;
+        border-bottom: 1px solid black;
+    }
+
+    .regConDeleteModalNo:active{
+        padding: 10px 50px ;
+        border-bottom: 1px solid black;
+    }
