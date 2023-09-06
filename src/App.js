@@ -22,7 +22,7 @@ function App() {
         
         <Route path="/registretion" element={<Reg/>}/>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="/add-phone-number" element={<PhoneNumberList/>}/>
+        <Route path="/admin_edit" element={<PhoneNumberList/>}/>
         <Route path="/memberprofile" element={<MemberProfile/>}/>
         <Route path="/listofmembers" element={<ListOfMembers/>}/>
         <Route path="/listofphonenumber" element={<ListOfPhoneNumber/>}/>
@@ -32,7 +32,7 @@ function App() {
 
 
 
-
+     
 
 
 

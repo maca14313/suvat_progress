@@ -50,7 +50,7 @@ function UpdateMember() {
           if (!effectRan.current) {
             const fetchData=async()=>{
               try {
-                const fetchMember=await axios.get(`http://localhost:8000/membersdata/fetchmember/${phone_number}`)
+                const fetchMember=await axios.get(`${hostVar}/membersdata/fetchmember/${phone_number}`)
                 setRegInfo(fetchMember.data)
               } catch (error) {
                 
@@ -63,6 +63,8 @@ function UpdateMember() {
           return () => effectRan.current = true;
 
       },[]);
+
+      console.log(regInfo)
 
   return (
     <div className='regCon'>

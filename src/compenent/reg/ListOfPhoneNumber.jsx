@@ -5,7 +5,7 @@ import {hostVar} from './VarImportes'
 
 
 function ListOfPhoneNumber() {
-    const regInfo=JSON.parse(localStorage.getItem('regInfo')) 
+    //const regInfo=JSON.parse(localStorage.getItem('regInfo')) 
 
     const [membersInfo,setMembersInfo]=useState([])
     const [info,setInfo]=useState('')
@@ -25,11 +25,18 @@ function ListOfPhoneNumber() {
     const navigate=useNavigate()
 
     const deleteMember=async(phone_number)=>{
-      const deleteData=await axios.get(`${hostVar}/membersdata/deletephonenumber/${phone_number}`)
-      if (deleteData.data=='ok') {
-        setOpenModal(false)
-        window.location.reload(true)
-        }
+
+      try {
+        const deleteData=await axios.get(`${hostVar}/membersdata/deletephonenumber/${phone_number}`)
+
+        if (deleteData.data=='ok') {
+          setOpenModal(false)
+          window.location.reload(true)
+          }
+      } catch (error) {
+        //window.location.reload(true)
+      }
+     
      }
 
 
@@ -101,7 +108,7 @@ function ListOfPhoneNumber() {
     {membersInfo.map((m)=>(
 <>
 <div className='regConDeleteModal' style={{display:openModal==true?'block':'none'}}><div className='regConDeleteModalTitle'>Are sure you want to delete this phone number </div>
-<div className='regConDeleteModalBtnCon'>      <div className='regConDeleteModalYes' onClick={()=>(deleteMember(m.phone_number),setOpenModal(true))}>Yes</div>  <div className='regConDeleteModalNo' onClick={()=>setOpenModal(false)}>No</div> </div>
+<div className='regConDeleteModalBtnCon' key={m.id}>      <div className='regConDeleteModalYes' onClick={()=>(deleteMember(m.phone_number),setOpenModal(false))}>Yes</div>  <div className='regConDeleteModalNo' onClick={()=>setOpenModal(false)}>No</div> </div>
 </div>
 
   

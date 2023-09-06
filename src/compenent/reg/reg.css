@@ -339,3 +339,25 @@ box-shadow: 1px 1px 10px grey;
         padding: 10px 50px ;
         border-bottom: 1px solid black;
     }
+
+
+    /*******************************************************************/
+.formConIntroCon{
+    margin-top: 20px;
+    padding: 40px 0px;
+    background-color: #00c8ff;
+}
+    .formConIntro{
+        max-width: 90%;
+        min-width:90%;
+         min-height:40px;
+         max-height: 40px; 
+         margin: 10px;
+         border: 1px solid #1aadca ;
+         color: black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: white;
+
+    }
