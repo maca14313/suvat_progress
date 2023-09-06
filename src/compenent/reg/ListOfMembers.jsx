@@ -54,7 +54,7 @@ function ListOfMembers() {
             
              <div className='formCon listOfMembersCon'>
              <input className='row listCon' type="text" placeholder='type some ting' onChange={(e)=>setSearchText(e.target.value)} />
-            <div className="searchByCon"> <div>Search by :-</div> <div className='searchByBtn' onClick={searchByName}>Name</div> <div className='searchByBtn' onClick={searchByPhoneNumber}>Phone Number</div></div>
+            <div className="searchByCon"> <div>Search by :-</div> <div className='searchByBtn' onClick={searchByName}>Name</div> <div className='searchByBtn' onClick={searchByPhoneNumber}>Number</div></div>
              </div>
 
           {membersInfo.map((m)=>(
