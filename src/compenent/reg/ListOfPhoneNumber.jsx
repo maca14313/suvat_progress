@@ -96,7 +96,7 @@ function ListOfPhoneNumber() {
 
 
        
-    <h3 className='titleOfProfile'><h5>List Of Members</h5> <span className='membersLength'>{membersInfo.length}</span> </h3> 
+    <h3 className='titleOfProfile'><h6>List of phone number</h6> <span className='membersLength'>{membersInfo.length}</span> </h3> 
 
     <div className='formCon listOfMembersCon regConDelete numberInputCon'>
              <input className='row listCon numberInput' type="text" placeholder='type some ting' onChange={(e)=>setSearchText(e.target.value)} />
