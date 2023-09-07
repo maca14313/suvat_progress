@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { Counter } from './features/counter/Counter';
-import './app.css';
 import Reg from './compenent/reg/Reg'
 import PhoneNumberList from './compenent/reg/PhoneNumberList';
 import MemberProfile from './compenent/reg/MemberProfile';
