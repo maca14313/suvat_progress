@@ -14,6 +14,16 @@ a{
 .margin_left10{
     margin-left: 10px;
 }
+.margin_right5{
+    margin-right: 5px;
+}
+.margin_right10{
+    margin-right: 10px;
+}
+.white_space{
+ white-space: nowrap;
+}
+
 .regCon{
     background-color:white;
     width: 100vw;
@@ -59,7 +69,18 @@ a{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+.updateRow{
+ display: flex;
+ align-items: center;
+ border: none;
+ margin: 2.5px;
+ max-width: 75vw;
+ min-height: 30px;
+ max-height: 30px;
+ box-shadow: 1px 1px 10px lightgray;
+ overflow-x: scroll;
+ border-bottom: 1px solid #00c8ff;
+}
 
 .regBtn{
     color: #fff;
@@ -69,10 +90,15 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #97edff;
   cursor: pointer;
   color: black;
-  font-size: 12px;
+  font-size: 14px;
+  min-height: 50px;
+ max-height: 50px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+
 }
 
-.regBtn:focus{
+.regBtn:active{
     background-color: #8aa7f5;
 }
 
@@ -85,7 +111,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     .formCon{
         min-width: 90vw;
         min-height:max-content;
-        margin-top: 10px;
+      /*  margin-top: 10px; */
     }
 }
 
@@ -93,7 +119,6 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     .formCon{
         min-width: 80vw;
         min-height:max-content;
-        margin-top: 10px;
     }
 }
 
@@ -149,7 +174,6 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  align-items: center;
  border: none;
  border-bottom: 1px solid rgb(179, 174, 174);
- margin: 2.5px;
  max-width: 75vw;
  min-height: 30px;
  max-height: 30px;
@@ -178,19 +202,26 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px 0px;
 }
 
+
+
 .listOfMembersCon{
 padding: 0px;
 box-shadow: 0px 0px 0px;
 
+
 }
+
 
 .numberInputCon{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    justify-self: center;
     box-shadow: 0px 0px 0px black;
     padding: 0px;
+    padding-left: 10%;
+    margin-top: 0px;
 }
 
 .numberInput{
@@ -215,6 +246,11 @@ box-shadow: 0px 0px 0px;
 }
 .spanOfList{
     margin-right:10px ;
+    display: flex;
+    color: black;
+}
+.deleteClick{
+    color: red;
 }
 
 .searchByCon{
@@ -239,9 +275,48 @@ box-shadow: 0px 0px 0px;
     font-size: 12px;
     border-radius: 7px;
     color: black;
+    border: none;
+    cursor: pointer;
+
 }
 .searchByBtn:active{
     padding: 10px 20px;
+}
+.numberBtnCon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 30px;
+    min-height: 30px;
+    margin-top: 5px;
+
+}
+.numberBtnConBtn{
+    padding: 5px 35px;
+    margin: 5px;
+    background-color: #97edff;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+.numberBtnConBtn:active{
+    padding: 10px 45px;
+}
+.deleteOnActive:active{
+    background-color:rgb(245, 101, 101);
+}
+.listOfMembersConSearchMInOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+.listOfMembersConAdd{
+    max-height: 130px;
+    min-height: 130px;
+    overflow-y: auto;
 }
 
 @media screen and (max-height:440px){
@@ -251,6 +326,19 @@ box-shadow: 0px 0px 0px;
        overflow-y: scroll;
        background-color: transparent;
     
+    }
+    .listOfMembersConSearch{
+        min-height:80px;
+       max-height: 80px;
+    }
+    .listOfMembersConSearchM{
+        min-height:35px;
+       max-height: 35px;
+    }
+    .listOfMembersConAdd{
+        max-height: 120px;
+        min-height: 120px;
+        overflow-y: auto;
     }
     
 }
@@ -306,7 +394,7 @@ box-shadow: 0px 0px 0px;
 }
 .regConDeleteModal{
 position: absolute;
-bottom: 45%;
+bottom: 2%;
 left: 45%;
 translate: -45%;
 max-width: 90%;
@@ -314,7 +402,7 @@ min-width:90%;
 min-height:100px;
 max-height: 100px;
 background-color:#97edff;
-box-shadow: 1px 1px 10px grey;
+box-shadow: 1px 1px 10px rgb(230, 228, 228);
 display: flex;
 flex-direction: column;
 align-items: center;

@@ -43,6 +43,8 @@ function UpdateMember() {
    },[]);
 
    const [gender,setGender]=useState(regInfo.gender)
+   const [batch,setBatch]=useState(regInfo?.batch)
+
 
        const updateInfo=async(e)=>{
         e.preventDefault()
@@ -52,6 +54,7 @@ function UpdateMember() {
                 fatherName:fatherName?fatherName:regInfo.father_name,
                 grandFatherName:grandFatherName?grandFatherName:regInfo.grand_father_name,
                 gender:gender?gender:regInfo.gender,
+                batch:batch?batch:regInfo.batch,
                 phoneNumber:phoneNumber?phoneNumber:regInfo.phone_number,
                 city:city?city:regInfo.city,
                 email:email?email:regInfo.email,
@@ -78,13 +81,13 @@ function UpdateMember() {
 <form  className='formCon regConDelete' onSubmit={updateInfo} >
 
 
- <label htmlFor="name" className='updatelabel'>Name</label>
+ <label htmlFor="name" className='updatelabel'>First Name</label>
  <input className='row listCon' id='name' type="text" onChange={(e)=>setName(e.target.value)} placeholder={regInfo.name} />
- <label htmlFor="Father_name" className='updatelabel'>Father_name</label>
+ <label htmlFor="Father_name" className='updatelabel'>Middle Name</label>
  <input className='row listCon' id='Father_name' type="text" onChange={(e)=>setFatherName(e.target.value)} placeholder={regInfo.father_name} />
- <label htmlFor="Grand_father_name" className='updatelabel'> Grand_father_name</label>
+ <label htmlFor="Grand_father_name" className='updatelabel'>Last Name</label>
  <input className='row listCon' id='Grand_father_name' type="text" onChange={(e)=>setGrandFatherName(e.target.value)} placeholder={regInfo.grand_father_name} />
-<label htmlFor="Phone_number" className='updatelabel'>Phone_number</label>
+<label htmlFor="Phone_number" className='updatelabel'>Phone Number</label>
  <input className='row listCon' id='Phone_number' type="text" onChange={(e)=>setPhoneNumber(e.target.value)} placeholder={regInfo.phone_number} />
  <label htmlFor="Email" className='updatelabel'>Email</label>
  <input className='row listCon' id='Email' type="text" onChange={(e)=>setEmail(e.target.value)} placeholder={regInfo.email} />
@@ -97,8 +100,8 @@ function UpdateMember() {
  <label htmlFor="Gender" className='updatelabel'>Gender</label>
  <input className='row listCon' id='Gender' type="text"  placeholder={regInfo.gender} disabled />
  
- <div className='row'>
-        <label className='' htmlFor="Gender">Gender</label>
+ <div className='row updateRow'>
+        <label style={{color:'gray'}} className='' htmlFor="Gender">Gender</label>
         <select className='margin_left10 selectUpdate'  onChange={(e) =>setGender(e.target.value)} defaultValue={regInfo.gender}   name="Gender" id="n">
             <option ></option>
             <option value="male" >Male</option>
@@ -108,8 +111,31 @@ function UpdateMember() {
         </select>
         </div>
 
+ <label htmlFor="Batch" className='updatelabel'>Batch</label>
+ <input className='row listCon' id='Batch' type="text"  placeholder={regInfo?.batch} disabled />
 
- <input className='row regBtn' type="submit" placeholder='Update' />
+ <div className='row updateRow'>
+        <label  style={{color:'gray'}} className='' htmlFor="batch">Batch</label>
+        <select className='margin_left10 selectUpdate'  onChange={(e) =>setBatch(e.target.value)} defaultValue={regInfo?.batch}   name="Batch" id="Batch">
+            <option></option>
+            <option value="2015" >2015</option>
+            <option value="2014" >2014</option>
+            <option value="2013" >2013</option>
+            <option value="2012" >2012</option>
+            <option value="2011" >2011</option>
+            <option value="2010" >2010</option>
+            <option value="2009" >2009</option>
+            <option value="Others" >Others</option>
+
+
+        </select>
+        </div>
+
+ 
+
+
+ <button className='row regBtn' type="submit">Update</button>
+
 
  <h6><Link to={'/'}>Go To Home Page</Link></h6>
  

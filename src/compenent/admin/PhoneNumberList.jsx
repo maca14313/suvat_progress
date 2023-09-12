@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import './reg.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import {hostVar} from './VarImportes'
+import {hostVar} from '../reg/VarImportes'
+import '../reg/reg.css'
+import AdminLogIn from './AdminLogIn'
+
 
 
 function PhoneNumberList() {
-  
+  const auth=JSON.parse(localStorage.getItem('auth'))
 
-  return (
-    <div className='regCon'>
+
+  return auth=='okk'?  (
+    <div className='regCon' >
 
      
 
-    <form action="" className='formCon formConIntroCon' >
+    <form style={{display:auth?'':'none'}} action="" className='formCon formConIntroCon' >
     <h1>Welcom To Suvat Progress</h1>
      <h3 className='margin'> This is admin page</h3>
     <Link className='formCon formConIntro ' to={'/listofphonenumber'}>show list of phone number</Link>
@@ -32,7 +35,7 @@ function PhoneNumberList() {
     <div></div>
  </div>
 
-  )
+  ):<AdminLogIn/>
 }
 
 export default PhoneNumberList
