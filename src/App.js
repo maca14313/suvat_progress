@@ -17,6 +17,7 @@ import LogInMember from 'compenent/reg/LogInMember';
 
 
 function App() {
+  // for admin git remote add origin https://github.com/maca14313/nameApp1.git
   const [routerAuth,setRouterAuth]=useState(true)
 
   return (

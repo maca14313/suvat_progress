@@ -123,15 +123,15 @@ function ListOfPhoneNumber() {
              <input className='row listCon numberInput ' type="text" placeholder='search ' onChange={(e)=>setSearchText(e.target.value)} />
             <div className="searchByCon searchByConNumber margin" style={{marginBottom:'12px'}} > <div className='searchByBtn' onClick={searchByPhoneNumber}>Search</div></div>
              </div>
-             
+
              <div className='numberBtnCon'>
-                  <div className='numberBtnConBtn' onClick={()=>(setRegNumber(!regNumber))} style={{display:regNumber==true?'none':'' }}>Show Registerd number</div>
-                  <div className='numberBtnConBtn' onClick={()=>(setRegNumber(!regNumber))} style={{display:regNumber==true?'':'none' }}>Show UnRegisterd number</div>
+                  <div className='numberBtnConBtn' onClick={()=>(setRegNumber(!regNumber))} style={{display:regNumber==true?'none':'' }}>Show Registerd numbers</div>
+                  <div className='numberBtnConBtn' onClick={()=>(setRegNumber(!regNumber))} style={{display:regNumber==true?'':'none' }}>Show UnRegisterd numbers</div>
 
                 </div>
 
-             <h3 className='titleOfProfile' style={{display:regNumber==true?'none':'' }}><h6>List of unregisterd number</h6> <span className='membersLength'>{membersInfo.length}</span> </h3> 
-             <h3 className='titleOfProfile' style={{display:regNumber==true?'':'none' }}><h6>List of registerd number</h6> <span className='membersLength'>{membersInfoReg.length}</span> </h3> 
+             <h3 className='titleOfProfile' style={{display:regNumber==true?'none':'' }}><h6>List of unregisterd numbers</h6> <span className='membersLength'>{membersInfo.length}</span> </h3> 
+             <h3 className='titleOfProfile' style={{display:regNumber==true?'':'none' }}><h6>List of registerd numbers</h6> <span className='membersLength'>{membersInfoReg.length}</span> </h3> 
 
               
     {membersInfoReg.map((m,index)=>(
