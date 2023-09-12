@@ -35,7 +35,7 @@ function HomePage() {
            
             <div className="navLinksConMiddleItem">Home</div>
             <div className="navLinksConMiddleItem">About Us</div>
-            <div className="navLinksConMiddleItem">Contacte</div>
+            <div className="navLinksConMiddleItem">Contact Us</div>
             <div className="navLinksConMiddleItem" style={{display:regInfo==undefined?'none':'block'}}>Payment</div>
             
            
