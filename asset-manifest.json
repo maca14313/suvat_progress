@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/suvat_progress/static/css/main.f4d8620a.css",
-    "main.js": "/suvat_progress/static/js/main.5d6708a6.js",
+    "main.js": "/suvat_progress/static/js/main.599a2e50.js",
     "static/js/787.cda612ba.chunk.js": "/suvat_progress/static/js/787.cda612ba.chunk.js",
     "static/media/Screen Shot 2023-09-03 at 10.32.34 PM.png": "/suvat_progress/static/media/Screen Shot 2023-09-03 at 10.32.34 PM.4a637452d532e72b1a55.png",
     "index.html": "/suvat_progress/index.html",
     "main.f4d8620a.css.map": "/suvat_progress/static/css/main.f4d8620a.css.map",
-    "main.5d6708a6.js.map": "/suvat_progress/static/js/main.5d6708a6.js.map",
+    "main.599a2e50.js.map": "/suvat_progress/static/js/main.599a2e50.js.map",
     "787.cda612ba.chunk.js.map": "/suvat_progress/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4d8620a.css",
-    "static/js/main.5d6708a6.js"
+    "static/js/main.599a2e50.js"
   ]
 }
