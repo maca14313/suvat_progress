@@ -22,7 +22,6 @@ function MemberProfile() {
           <div className='row listCon'><span>Dept</span> <span>{regInfo?.dept}</span></div>
          <div className='row listCon'><span>Date</span> <span>{regInfo?.register_date}</span></div>
 
-          <Link className='margin' to={`/updatemember/${regInfo?.phone_number}`}>Update Your Profile</Link>
 
 
 
