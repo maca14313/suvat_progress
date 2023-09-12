@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { Counter } from './features/counter/Counter';
-
+import PhoneNumberList from './compenent/admin/PhoneNumberList';
+import ListOfMembers from './compenent/admin/ListOfMembers';
+import ListOfPhoneNumber from './compenent/admin/ListOfPhoneNumber';
+import AdminUpdateMember from './compenent/admin/AdminUpdateMember';
+import AdminLogIn from 'compenent/admin/AdminLogIn';
 
 import HomePage from './compenent/reg/HomePage';
 import MemberProfile from './compenent/reg/MemberProfile';
@@ -24,7 +28,11 @@ function App() {
         
         
 
-       
+        <Route path="/admin_edit" element={<PhoneNumberList/>}/>
+        <Route path="/listofmembers" element={<ListOfMembers/>}/>
+        <Route path="/listofphonenumber" element={<ListOfPhoneNumber/>}/>
+        <Route path="/adminupdatemember/:phone_number" element={<AdminUpdateMember/>}/>
+        <Route path="/" element={<AdminLogIn/>}/>
 
 
         
